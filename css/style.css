@@ -1,15 +1,79 @@
-/* Skills list styling */
-.skills-list {
-  list-style-type: disc; /* show bullets */
-  margin-left: 25px;     /* indent bullets */
-  padding-left: 0;       /* reset padding */
-  color: #333;           /* text color */
-  font-size: 1rem;       /* readable size */
-  line-height: 1.6;      /* spacing between items */
+/* ================================
+   Restored Factory CSS
+   No bullets, default spacing
+   ================================ */
+
+/* Reset default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-/* Headings spacing */
-h2, h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
+/* Body */
+body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+/* Lists - no bullets */
+ul {
+  list-style: none;  /* removes bullets */
+  padding-left: 0;   /* removes indent */
+  margin: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Sections */
+header, section, footer {
+  padding: 2rem;
+}
+
+/* Header styling */
+header {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: container for content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
