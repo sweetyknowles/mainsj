@@ -76,7 +76,7 @@ Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/license
                 <a href="#hero_section" class="scroll-link">Home</a>
               </li>
               <li>
-                <a href="#aboutUs" class="scroll-link">About Me</a>
+                <a href="#aboutUs" class="scroll-link">About</a>
               </li>
               <li>
                 <a href="#service" class="scroll-link">Skills</a>
@@ -577,7 +577,7 @@ Technical documentation – creating clear specs, user stories, and solution doc
             <h5>SE protoypes</h5>
             </a></li>
           
-            <li><a class="" href="#" data-filter=".design">
+            <li><a id=""banking-btn" href="#">
               <h5>Banking Industry - Tier 1 Digital Transformation</h5>
               </a></li>
 
@@ -700,30 +700,31 @@ Technical documentation – creating clear specs, user stories, and solution doc
             </div>
           </figcaption>
         </figure>
-
-        <script type="text/javascript">
-$(document).ready(function() {
-
-  $('#all').on('click', function(e) {
-    e.preventDefault();
-    $('#portfolio_wrapper').fadeIn(300); // show projects
-    $('#banking-content').hide();        // hide banking paragraph
-    $('#filters a').removeClass('active');
-    $(this).addClass('active');
-  });
-
-  // Banking button
-  $('#banking-btn').on('click', function(e) {
-    e.preventDefault();
-    $('#portfolio_wrapper').hide();       // hide projects
-    $('#banking-content').fadeIn(300);    // show banking paragraph
-    $('#filters a').removeClass('active');
-    $(this).addClass('active');
-  });
-
-});
-</script>
-
+        <script>
+          $(document).ready(function() {
+          
+            // SE Prototypes button
+            $('#all').click(function(e){
+              e.preventDefault();
+              $('#portfolio_wrapper').fadeIn(300);
+              $('#banking-content').hide();
+              $('#filters a').removeClass('active');
+              $(this).addClass('active');
+            });
+          
+            // Banking button
+            $('#banking-btn').click(function(e){
+              e.preventDefault();
+              $('#portfolio_wrapper').hide();
+              $('#banking-content').fadeIn(300);
+              $('#filters a').removeClass('active');
+              $(this).addClass('active');
+            });
+          
+          });
+          </script>
+          
+       
                
 
 
