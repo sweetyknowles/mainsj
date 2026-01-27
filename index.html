@@ -704,27 +704,25 @@ Technical documentation – creating clear specs, user stories, and solution doc
         <script type="text/javascript">
 $(document).ready(function() {
 
-  // Show SE Prototypes (all projects)
-  $('#all').click(function(e) {
+  $('#all').on('click', function(e) {
     e.preventDefault();
-    $('#portfolio_wrapper').fadeIn(300);
-    $('#banking-content').hide(); // hide banking paragraph
+    $('#portfolio_wrapper').fadeIn(300); // show projects
+    $('#banking-content').hide();        // hide banking paragraph
     $('#filters a').removeClass('active');
     $(this).addClass('active');
   });
 
-  // Show Banking paragraph
-  $('#banking-btn').click(function(e) {
+  // Banking button
+  $('#banking-btn').on('click', function(e) {
     e.preventDefault();
-    $('#portfolio_wrapper').hide(); // hide projects
-    $('#banking-content').fadeIn(300); // show banking paragraph
+    $('#portfolio_wrapper').hide();       // hide projects
+    $('#banking-content').fadeIn(300);    // show banking paragraph
     $('#filters a').removeClass('active');
     $(this).addClass('active');
   });
 
 });
 </script>
-
 
                
 
