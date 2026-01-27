@@ -719,32 +719,34 @@ Technical documentation – creating clear specs, user stories, and solution doc
     </div>
 
   </section>
-
-  !-- JAVASCRIPT -->
-<script type="text/javascript">
-  $(document).ready(function(){
-
-    // Show Banking Case Study
-    $('#banking-btn').on('click', function(e){
-      e.preventDefault();
-      $('#portfolio_wrapper').hide(); 
-      $('#banking-content').fadeIn(300); 
-      $('#filters a').removeClass('active');
-      $(this).addClass('active');
+  <script type="text/javascript">
+    $(document).ready(function() {
+    
+      // BANKING CASE STUDY
+      $('#banking-btn').on('click', function(e) {
+        e.preventDefault();
+    
+        $('#portfolio_wrapper').hide();
+        $('#banking-content').fadeIn(300);
+    
+        $('#filters a').removeClass('active');
+        $(this).addClass('active');
+      });
+    
+      // ALL / SE Prototypes
+      $('#all').on('click', function(e) {
+        e.preventDefault();
+    
+        $('#banking-content').hide();
+        $('#portfolio_wrapper').fadeIn(300);
+    
+        $('#filters a').removeClass('active');
+        $(this).addClass('active');
+      });
+    
     });
-
-    // Show All / SE Prototypes
-    $('#all').on('click', function(e){
-      e.preventDefault();
-      $('#banking-content').hide();
-      $('#portfolio_wrapper').fadeIn(300);
-      $('#filters a').removeClass('active');
-      $(this).addClass('active');
-    });
-
-    // Add similar logic for Energy & Healthcare if needed
-  });
-</script>
+    </script>
+    
 
   
   <!--/Portfolio -->
