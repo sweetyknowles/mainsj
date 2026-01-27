@@ -577,7 +577,7 @@ Technical documentation – creating clear specs, user stories, and solution doc
             <h5>SE protoypes</h5>
             </a></li>
           
-            <li><a id=""banking-btn" href="#">
+            <li><a id="banking-btn" href="#">
               <h5>Banking Industry - Tier 1 Digital Transformation</h5>
               </a></li>
 
@@ -592,7 +592,15 @@ Technical documentation – creating clear specs, user stories, and solution doc
         </ul>
       </div>
 
-        
+        <!-- Banking button (outside of filters so Isotope ignores it) -->
+<div class="banking-button-wrapper">
+  <a id="banking-btn" href="#">
+    <h5>Banking Industry – Tier 1 Digital Transformation</h5>
+  </a>
+</div>
+
+
+
       <!--/Portfolio Filters -->
       
 
@@ -702,8 +710,7 @@ Technical documentation – creating clear specs, user stories, and solution doc
         </figure>
         <script>
           $(document).ready(function() {
-          
-            // SE Prototypes button
+            // Show SE Prototypes projects
             $('#all').click(function(e){
               e.preventDefault();
               $('#portfolio_wrapper').fadeIn(300);
@@ -712,17 +719,15 @@ Technical documentation – creating clear specs, user stories, and solution doc
               $(this).addClass('active');
             });
           
-            // Banking button
+            // Show Banking paragraph
             $('#banking-btn').click(function(e){
               e.preventDefault();
-              $('#portfolio_wrapper').hide();
-              $('#banking-content').fadeIn(300);
-              $('#filters a').removeClass('active');
-              $(this).addClass('active');
+              $('#portfolio_wrapper').hide();       // hide projects
+              $('#banking-content').fadeIn(300);    // show banking paragraph
             });
-          
           });
           </script>
+          
           
        
                
