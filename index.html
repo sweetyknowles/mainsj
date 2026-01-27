@@ -573,11 +573,10 @@ Technical documentation – creating clear specs, user stories, and solution doc
       <div id="filters" class="sixteen columns">
         <ul class="clearfix">
 
-
           <li><a id="all" href="#" data-filter="*" class="active">
             <h5>SE protoypes</h5>
             </a></li>
-          <li><a class="" href="#" data-filter=".prototype">
+          <li><a href="#" id="banking-btn">
             <h5>Banking Industry - Tier 1 Digital Transformation</h5>
             </a></li>
           <li><a class="" href="#" data-filter=".design">
@@ -593,6 +592,30 @@ Technical documentation – creating clear specs, user stories, and solution doc
 
         
       <!--/Portfolio Filters -->
+
+      <div id="banking-content" style="display:none;" class="case-study-wrapper">
+        <div class="sixteen columns">
+      
+          <h3>Banking Industry – Tier 1 Digital Transformation</h3>
+      
+          <p>
+            Led a large-scale digital transformation initiative modernizing Tier-1
+            banking representative platforms. Transitioned legacy analog workflows
+            into secure, scalable digital systems while driving Agile delivery,
+            governance, and cross-functional execution across Product, Engineering,
+            UX, and Operations.
+          </p>
+      
+          <ul class="case-study-metrics">
+            <li>Reduced manual processing effort by <strong>40%</strong></li>
+            <li>Improved operational accuracy by <strong>25%</strong></li>
+            <li>Increased on-time releases by <strong>15%</strong></li>
+            <li>Cut onboarding time for new representatives by <strong>20%</strong></li>
+          </ul>
+      
+        </div>
+      </div>
+      
 
       <!-- Portfolio Wrapper -->
       <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
@@ -695,8 +718,33 @@ Technical documentation – creating clear specs, user stories, and solution doc
       <div id="project_data"></div>
     </div>
 
-
   </section>
+
+  !-- JAVASCRIPT -->
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    // Show Banking Case Study
+    $('#banking-btn').on('click', function(e){
+      e.preventDefault();
+      $('#portfolio_wrapper').hide(); 
+      $('#banking-content').fadeIn(300); 
+      $('#filters a').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    // Show All / SE Prototypes
+    $('#all').on('click', function(e){
+      e.preventDefault();
+      $('#banking-content').hide();
+      $('#portfolio_wrapper').fadeIn(300);
+      $('#filters a').removeClass('active');
+      $(this).addClass('active');
+    });
+
+    // Add similar logic for Energy & Healthcare if needed
+  });
+</script>
 
   
   <!--/Portfolio -->
