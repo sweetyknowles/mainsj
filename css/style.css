@@ -859,6 +859,12 @@ background-position: right;
 background-size: auto 100%;
 background-position-y: 70px;
 }
+/* Bigger About Section */
+#aboutUs {
+    padding: 100px 0; /* taller section (was 60px) */
+}
+
+}
 #about-us .read-more{
   border: 1px solid #ED5441;
   color: #1a1a1a;
