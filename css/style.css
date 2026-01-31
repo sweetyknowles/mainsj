@@ -470,9 +470,20 @@ a.read_more:hover {
 ---------------------------------*/
 
 #service {
+   
     padding: 60px 0px;
-  background: rgba(0, 0, 0, 0.6)
+    background: #CE1139;
 }
+
+/* ADD THIS RIGHT HERE */
+#service h2,
+#service .service_block h3,
+#service .service_block p,
+#service .service_icon i {
+    color: #ffffff !important;
+    mix-blend-mode: normal !important;
+}
+
 #service h2{
   color: #fff;
 
