@@ -2082,25 +2082,7 @@ section#aboutUs h4 {
     letter-spacing: 0.5px; 
 }
 
-=====
-#aboutUs h4 {
-    font-size: 28px;           /* slightly bigger and elegant */
-    font-family: 'Raleway', sans-serif; /* modern premium font */
-    font-weight: 500;           /* semi-bold for sophistication */
-    color: #1a1a1a;             /* original dark color */
-    text-align: center;          /* center it under h2 */
-    letter-spacing: 0.5px;      /* spacing for a luxury feel */
-    line-height: 1.5;           /* breathing space */
-    margin-top: 15px;
-    opacity: 0;
-    animation: fadeIn 1.2s forwards; /* subtle fade-in */
-}
 
-/* fade-in keyframe */
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
+
 
 
