@@ -858,11 +858,7 @@ background-repeat: no-repeat;
 background-position: right;
 background-size: auto 100%;
 background-position-y: 70px;
-}
-/* Bigger About Section */
-#aboutUs {
-    padding: 100px 0; /* taller section (was 60px) */
-}
+
 
 }
 #about-us .read-more{
@@ -2076,3 +2072,22 @@ height: auto;
     color: #ffffff !important;        /* pure white text */
     mix-blend-mode: normal !important; /* prevent blending issues */
 }
+
+/* Make About Section Bigger */
+.about-us-container {
+    padding: 100px 0; /* taller section */
+}
+
+.about-us h3 {
+    font-size: 36px !important;  /* bigger heading */
+}
+
+.about-us p {
+    font-size: 20px !important;  /* bigger paragraph text */
+    line-height: 32px !important; /* better spacing */
+}
+
+.about-us .points {
+    font-size: 18px !important; /* bigger bullet points */
+}
+
