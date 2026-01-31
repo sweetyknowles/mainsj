@@ -470,9 +470,30 @@ a.read_more:hover {
 ---------------------------------*/
 
 #service {
-   
+
     padding: 60px 0px;
-    background: #CE1139;
+    background: #CE1139; 
+    position: relative;
+    z-index: 1;
+}
+
+/* Force white and stacking */
+#service h2,
+#service .service_block h3,
+#service .service_block p,
+#service .service_icon i {
+    color: #ffffff !important;
+    mix-blend-mode: normal !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional: overlay behind icons */
+.service_block .service_icon span {
+    background-color: rgba(0,0,0,0.2);
+}
+
 }
 
 /* ADD THIS RIGHT HERE */
