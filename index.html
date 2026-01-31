@@ -920,33 +920,33 @@ Technical documentation – creating clear specs, user stories, and solution doc
   <script src="contact/contact_me.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
 
-
+</script>
 
 <script>
-document.querySelectorAll('.skill-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const list = header.nextElementSibling;
-    const items = list.querySelectorAll('li');
+document.addEventListener("DOMContentLoaded", function() {
+  const skillBlocks = document.querySelectorAll(".service_block");
 
-    list.style.display = 'block'; // make sure container is visible
+  skillBlocks.forEach(block => {
+    const header = block.querySelector(".skill-header");
+    const bullets = block.querySelectorAll("li");
+    let index = 0;  // tracks which bullet to show next
 
-    // Show the next hidden bullet
-    for (let li of items) {
-      if (!li.classList.contains('shown')) {
-        li.classList.add('shown');
-        return; // show only one per click
+    // hide all bullets initially
+    bullets.forEach(li => li.style.display = "none");
+
+    header.addEventListener("click", () => {
+      if (index < bullets.length) {
+        bullets[index].classList.add("show");
+        index++;
+      } else {
+        // Optional: restart sequence if clicked again after last bullet
+        bullets.forEach(li => li.classList.remove("show"));
+        index = 0;
       }
-    }
-
-    // If all bullets shown, reset on next click
-    if ([...items].every(li => li.classList.contains('shown'))) {
-      items.forEach(li => li.classList.remove('shown'));
-      list.style.display = 'none';
-    }
+    });
   });
 });
 </script>
-
 
 
 </body>
