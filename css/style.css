@@ -2071,12 +2071,12 @@ height: auto;
     color: #ffffff !important;        /* pure white text */
     mix-blend-mode: normal !important; /* prevent blending issues */
 }
-========== 
-h4 {
-    font-size: 24px;       /* make text bigger */
-    text-align: center;    /* center the text */
-    color: #000000;        /* black text */
-    font-weight: 600;      /* optional bold */
-    margin: 20px 0;        /* optional spacing above and below */
-}
 
+/* Hero subtitle styling */
+#hero_section h4 {
+    font-size: 28px;      /* bigger text */
+    text-align: center;   /* center it */
+    color: #000000;       /* black color */
+    font-weight: 600;     /* slightly bold */
+    margin: 20px 0;       /* spacing above/below */
+}
