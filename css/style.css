@@ -472,7 +472,7 @@ a.read_more:hover {
 #service {
 
     padding: 60px 0px;
-    background: #CE1139; 
+    background: #0B1B3F; 
     position: relative;
     z-index: 1;
 }
@@ -700,7 +700,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a:hover {
-    background: #ED5441;
+    background: #0B1B3F;
     color: #fff;
     text-decoration: none;
 }
@@ -730,7 +730,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a.current {
-    background: #ED5441;
+    background: #0B1B3F;
     color: #fff;
     text-decoration: none;
 }
