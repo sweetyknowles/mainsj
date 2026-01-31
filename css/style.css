@@ -2064,3 +2064,9 @@ float: left;
 width: 60px;
 height: auto;
 }
+/* Force all Skills section text and icons to white */
+#service,
+#service * {
+    color: #ffffff !important;        /* pure white text */
+    mix-blend-mode: normal !important; /* prevent blending issues */
+}
