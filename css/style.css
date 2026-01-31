@@ -820,7 +820,7 @@ img {
 
 
 .client_logos {
-    background: #CE1139;
+    background: #0B1B3F;
     padding: 60px 0;
     margin-top: 60px;
 }
@@ -2069,12 +2069,4 @@ height: auto;
 #service * {
     color: #ffffff !important;        /* pure white text */
     mix-blend-mode: normal !important; /* prevent blending issues */
-}
-/* Testimonial section banner to dark navy */
-#testimonials,
-.testimonials,
-.testimonial-section,
-.testimonials-container {
-    background: #0B1B3F; /* dark navy */
-    padding: 60px 0;     /* add spacing above/below */
 }
