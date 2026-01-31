@@ -471,7 +471,7 @@ a.read_more:hover {
 
 #service {
     padding: 60px 0px;
-    background: #C000;
+  background: rgba(0, 0, 0, 0.6)
 }
 #service h2{
   color: #fff;
