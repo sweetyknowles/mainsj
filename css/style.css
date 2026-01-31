@@ -306,7 +306,7 @@ p {
 
 .navStyle ul li a {
     display: block;
-    font-size: 18px;
+    font-size: 14px;
     color: #222222;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -858,7 +858,6 @@ background-repeat: no-repeat;
 background-position: right;
 background-size: auto 100%;
 background-position-y: 70px;
-
 
 }
 #about-us .read-more{
@@ -2072,5 +2071,3 @@ height: auto;
     color: #ffffff !important;        /* pure white text */
     mix-blend-mode: normal !important; /* prevent blending issues */
 }
-
-
