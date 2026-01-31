@@ -922,31 +922,8 @@ Technical documentation – creating clear specs, user stories, and solution doc
 
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const skillBlocks = document.querySelectorAll(".service_block");
 
-  skillBlocks.forEach(block => {
-    const header = block.querySelector(".skill-header");
-    const bullets = block.querySelectorAll("li");
-    let index = 0;  // tracks which bullet to show next
 
-    // hide all bullets initially
-    bullets.forEach(li => li.style.display = "none");
-
-    header.addEventListener("click", () => {
-      if (index < bullets.length) {
-        bullets[index].classList.add("show");
-        index++;
-      } else {
-        // Optional: restart sequence if clicked again after last bullet
-        bullets.forEach(li => li.classList.remove("show"));
-        index = 0;
-      }
-    });
-  });
-});
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
   new WOW().init();
