@@ -2085,4 +2085,13 @@ section#aboutUs h4 {
 
 
 
+.skill-list li {
+  display: none;       /* hide bullets initially */
+  opacity: 0;
+  transition: all 0.5s ease;
+}
 
+.skill-list li.shown {
+  display: list-item;  /* show on click */
+  opacity: 1;
+}

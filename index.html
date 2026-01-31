@@ -292,9 +292,10 @@ Technical documentation – creating clear specs, user stories, and solution doc
             </div>
             <div class="service_block">
 
-              <h3 class="animated fadeInUp wow">Product Ownership </h3>
+              <h3 class="skill-header animated fadeInUp wow">Product Ownership</h3>
+    <ul class="skill-list animated fadeInDown wow">
               
-              <p class="animated fadeInDown wow">  
+              
                 <li>Product vision, strategy, and outcome ownership</li>
 
   <li>Backlog creation, prioritization, and ongoing refinement</li>
@@ -308,6 +309,7 @@ Technical documentation – creating clear specs, user stories, and solution doc
   <li>Metrics-driven decision-making (KPIs, ROI, adoption, outcomes)</li>
   <li>Agile product lifecycle management</li>
   <li>Governance, release readiness, and delivery assurance</li>
+    </ul>
             </div>
           </div>
           
@@ -917,6 +919,35 @@ Technical documentation – creating clear specs, user stories, and solution doc
   <script src="contact/jqBootstrapValidation.js"></script>
   <script src="contact/contact_me.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+
+
+
+<script>
+document.querySelectorAll('.skill-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const list = header.nextElementSibling;
+    const items = list.querySelectorAll('li');
+
+    list.style.display = 'block'; // make sure container is visible
+
+    // Show the next hidden bullet
+    for (let li of items) {
+      if (!li.classList.contains('shown')) {
+        li.classList.add('shown');
+        return; // show only one per click
+      }
+    }
+
+    // If all bullets shown, reset on next click
+    if ([...items].every(li => li.classList.contains('shown'))) {
+      items.forEach(li => li.classList.remove('shown'));
+      list.style.display = 'none';
+    }
+  });
+});
+</script>
+
+
 
 </body>
 
