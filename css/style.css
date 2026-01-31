@@ -2081,5 +2081,65 @@ section#aboutUs h4 {
     line-height: 1.4;      
     letter-spacing: 0.5px; 
 }
+/* Hero Section Upgrade */
+#hero_section {
+    background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+    color: #000; /* default text black */
+    text-align: center;
+    padding: 150px 20px; /* vertical padding for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* take most of the viewport */
+}
+
+#hero_section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#hero_section h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px; /* bigger and visible */
+    font-weight: 500;
+    color: #000; /* black tagline */
+    max-width: 700px; /* controls line length for readability */
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Simple fade-up animation */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Optional: CTA Button styling */
+#hero_section .cta-button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ED5441; /* accent color */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#hero_section .cta-button:hover {
+    background-color: #e74c3c;
+    transform: translateY(-2px);
+}
 
 
