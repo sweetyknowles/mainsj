@@ -2073,9 +2073,13 @@ height: auto;
 }
 
 section#aboutUs h4 {
-    font-size: 28px !important;    /* bigger font */
-    text-align: center !important; /* centered */
-    color: #000000 !important;     /* black */
-    font-weight: 600 !important;   /* bold-ish */
-    margin: 20px 0 !important;     /* spacing */
+    font-size: 24px;       
+    font-weight: 500;      
+    color: #000000;        
+    text-align: center;    
+    margin-top: 15px;      
+    line-height: 1.4;      
+    letter-spacing: 0.5px; 
 }
+
+
