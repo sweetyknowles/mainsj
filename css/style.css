@@ -306,7 +306,7 @@ p {
 
 .navStyle ul li a {
     display: block;
-    font-size: 14px;
+    font-size: 18px;
     color: #222222;
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
@@ -2073,21 +2073,4 @@ height: auto;
     mix-blend-mode: normal !important; /* prevent blending issues */
 }
 
-/* Make About Section Bigger */
-.about-us-container {
-    padding: 100px 0; /* taller section */
-}
-
-.about-us h3 {
-    font-size: 36px !important;  /* bigger heading */
-}
-
-.about-us p {
-    font-size: 20px !important;  /* bigger paragraph text */
-    line-height: 32px !important; /* better spacing */
-}
-
-.about-us .points {
-    font-size: 18px !important; /* bigger bullet points */
-}
 
