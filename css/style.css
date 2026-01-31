@@ -2070,3 +2070,11 @@ height: auto;
     color: #ffffff !important;        /* pure white text */
     mix-blend-mode: normal !important; /* prevent blending issues */
 }
+/* Testimonial section banner to dark navy */
+#testimonials,
+.testimonials,
+.testimonial-section,
+.testimonials-container {
+    background: #0B1B3F; /* dark navy */
+    padding: 60px 0;     /* add spacing above/below */
+}
