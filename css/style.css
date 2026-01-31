@@ -482,11 +482,9 @@ a.read_more:hover {
 #service .service_block h3,
 #service .service_block p,
 #service .service_icon i {
-    color: #ffffff !important;
-    mix-blend-mode: normal !important;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    position: relative;
-    z-index: 2;
+    color: #ffffff !important;        /* force pure white */
+    mix-blend-mode: normal !important; /* prevent blending issues */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* optional contrast */
 }
 
 /* Optional: overlay behind icons */
