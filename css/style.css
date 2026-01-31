@@ -2072,11 +2072,10 @@ height: auto;
     mix-blend-mode: normal !important; /* prevent blending issues */
 }
 
-/* Hero subtitle styling */
-#hero_section h4 {
-    font-size: 28px;      /* bigger text */
-    text-align: center;   /* center it */
-    color: #000000;       /* black color */
-    font-weight: 600;     /* slightly bold */
-    margin: 20px 0;       /* spacing above/below */
+section#aboutUs h4 {
+    font-size: 28px !important;    /* bigger font */
+    text-align: center !important; /* centered */
+    color: #000000 !important;     /* black */
+    font-weight: 600 !important;   /* bold-ish */
+    margin: 20px 0 !important;     /* spacing */
 }
