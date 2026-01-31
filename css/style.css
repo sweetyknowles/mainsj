@@ -2071,3 +2071,12 @@ height: auto;
     color: #ffffff !important;        /* pure white text */
     mix-blend-mode: normal !important; /* prevent blending issues */
 }
+========== 
+h4 {
+    font-size: 24px;       /* make text bigger */
+    text-align: center;    /* center the text */
+    color: #000000;        /* black text */
+    font-weight: 600;      /* optional bold */
+    margin: 20px 0;        /* optional spacing above and below */
+}
+
