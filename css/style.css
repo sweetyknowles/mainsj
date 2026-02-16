@@ -497,7 +497,7 @@ a.read_more:hover {
     background-color: rgba(0,0,0,0.2);
 }
 
-}
+
 
 /* ADD THIS RIGHT HERE */
 #service h2,
@@ -2289,3 +2289,54 @@ section#aboutUs h4 {
 }
 
 
+/* ========================= */
+/*  ADDITIONAL ANIMATIONS    */
+/* ========================= */
+
+/* --- Hero Text Fade + Slide --- */
+.top_left_cont h2,
+.top_left_cont p,
+a.read_more, a.read_more2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s ease forwards;
+}
+
+.top_left_cont h2 {
+  animation-delay: 0.3s;
+}
+
+.top_left_cont p {
+  animation-delay: 0.5s;
+}
+
+a.read_more, a.read_more2 {
+  animation-delay: 0.7s;
+}
+
+/* --- Keyframes --- */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Portfolio Boxes Hover Scale --- */
+.Portfolio-box {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.Portfolio-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* --- Services Icon Pulse --- */
+.service_icon span {
+  transition: transform 0.3s ease;
+}
+
+.service_icon span:hover {
+  transform: scale(1.2);
+}
