@@ -2259,4 +2259,17 @@ section#aboutUs h4 {
   }
 }
 
+/* Center tables inside artifacts section */
+#artifacts .artifact-block table.artifact-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* optional: adjust width */
+  border-collapse: collapse;
+}
+
+#artifacts .artifact-block table.artifact-table th,
+#artifacts .artifact-block table.artifact-table td {
+  padding: 8px 12px;
+  text-align: left; /* keeps content readable */
+}
 
