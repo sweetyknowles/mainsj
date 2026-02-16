@@ -2396,110 +2396,33 @@ a.read_more, a.read_more2 {
 /* ========================= */
 /*  Glassy Fancy Navbar      */
 /* ========================= */
-/* ===== NAVBAR GLASS BUTTONS ===== */
+.top_left_cont {
+    padding: 110px 0;
+    text-align: center; /* center all content horizontally */
+}
 
-/* ===== NAVBAR GLASS BUTTONS ===== */
-.navStyle ul li a {
-    position: relative;
+/* Glassy Hero Buttons */
+.hero-btn {
     display: inline-block;
-    padding: 10px 22px;
-    font-size: 16px;
+    margin: 15px 10px;   /* spacing between buttons */
+    padding: 15px 30px;
+    font-size: 18px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    text-transform: uppercase;
     color: #fff;
+    text-transform: uppercase;
+    border-radius: 12px;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-radius: 12px;
-    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.2);
     transition: all 0.4s ease;
     text-decoration: none;
-    border: 1px solid rgba(255,255,255,0.15);
-    z-index: 1;
 }
 
-/* Yellow luxury glow with hint of red */
-.navStyle ul li a::before {
-    content: '';
-    position: absolute;
-    top: -60%;
-    left: -60%;
-    width: 220%;
-    height: 220%;
-    background: linear-gradient(
-        45deg,
-        #ffd700,   /* luxury gold/yellow */
-        #ffb300,
-        #ff3b3b,   /* subtle red accent */
-        #ffd700
-    );
-    background-size: 400% 400%;
-    z-index: -1;
-    filter: blur(14px);
-    opacity: 0.55;
-    animation: goldFlow 8s linear infinite;
+.hero-btn:hover {
+    color: #FFD700; /* luxury gold on hover */
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 8px 30px rgba(255,215,0,0.25);
+    transform: scale(1.05);
 }
-
-/* Hover */
-.navStyle ul li a:hover {
-    transform: translateY(-2px) scale(1.05);
-    box-shadow: 0 10px 35px rgba(255,215,0,0.35);
-}
-
-.navStyle ul li a:hover::before {
-    opacity: 0.9;
-}
-
-/* ===== APPLY SAME EFFECT TO HERO BUTTONS ===== */
-a.read_more, a.read_more2 {
-    position: relative;
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(10px);
-    border-radius: 14px;
-    color: #fff;
-    border: 1px solid rgba(255,255,255,0.2);
-    overflow: hidden;
-    transition: all 0.4s ease;
-}
-
-a.read_more::before,
-a.read_more2::before {
-    content: '';
-    position: absolute;
-    top: -60%;
-    left: -60%;
-    width: 220%;
-    height: 220%;
-    background: linear-gradient(
-        45deg,
-        #ffd700,
-        #ffb300,
-        #ff3b3b,
-        #ffd700
-    );
-    background-size: 400% 400%;
-    filter: blur(14px);
-    opacity: 0.55;
-    z-index: -1;
-    animation: goldFlow 8s linear infinite;
-}
-
-a.read_more:hover,
-a.read_more2:hover {
-    transform: scale(1.06);
-    box-shadow: 0 12px 40px rgba(255,215,0,0.35);
-}
-
-a.read_more:hover::before,
-a.read_more2:hover::before {
-    opacity: 0.9;
-}
-
-/* animation */
-@keyframes goldFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 120% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
