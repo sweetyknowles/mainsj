@@ -2082,5 +2082,13 @@ section#aboutUs h4 {
     letter-spacing: 0.5px; 
 }
 
+.bullet-list {
+  list-style-type: disc; /* show bullets */
+  margin-left: 20px;     /* spacing from text */
+  padding-left: 0;       /* or adjust as needed */
+}
+.bullet-list li {
+  margin-bottom: 10px;   /* spacing between bullets */
+}
 
 
