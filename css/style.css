@@ -2393,21 +2393,42 @@ a.read_more, a.read_more2 {
   transform: scale(1.2);
 }
 /* ========================= */
-/*  Fancy Navbar Animation   */
+/*  Glassy Fancy Navbar      */
 /* ========================= */
 
-/* Navbar base style */
 .navStyle ul li a {
     position: relative;
-    color: #222222;
-    font-weight: 600;
+    font-family: 'Raleway', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
     font-size: 18px;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    color: #ffffff; /* default text */
     transition: all 0.4s ease;
+    border-radius: 12px;
+    backdrop-filter: blur(10px); /* glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05); /* subtle transparent layer */
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
 }
 
-/* Underline hover effect with gradient */
+/* Hover / focus glow */
+.navStyle ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #FFD700; /* luxurious gold */
+    transform: scale(1.05);
+    box-shadow: 0 8px 40px rgba(255,215,0,0.3); /* glowing highlight */
+}
+
+/* Clicked / active link */
+.navStyle ul li a.current,
+.navStyle ul li a.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFD700;
+    box-shadow: 0 6px 25px rgba(255,215,0,0.25);
+}
+
+/* Optional: elegant underline animation retained */
 .navStyle ul li a::after {
     content: '';
     position: absolute;
@@ -2415,48 +2436,16 @@ a.read_more, a.read_more2 {
     height: 3px;
     left: 50%;
     bottom: -5px;
-    background: linear-gradient(90deg, #ED5441, #FFE800, #0593F9);
+    background: linear-gradient(90deg, #FFD700, #FFB700, #FFD700);
     transition: all 0.4s ease;
     border-radius: 2px;
     transform: translateX(-50%);
 }
 
-/* Hover state */
 .navStyle ul li a:hover::after {
     width: 100%;
 }
-
-/* Color change and scale on hover */
-.navStyle ul li a:hover {
-    color: #ED5441;  /* Main accent color */
-    transform: scale(1.05);
-}
-
-/* Active link style */
-.navStyle ul li a.current,
-.navStyle ul li a.active {
-    color: #ED5441;
-}
-
 .navStyle ul li a.current::after,
 .navStyle ul li a.active::after {
-    width: 100%;
-}
-
-/* Optional: smooth background highlight */
-.navStyle ul li a::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background: rgba(237,84,65,0.1);
-    z-index: -1;
-    transition: all 0.4s ease;
-    border-radius: 4px;
-}
-
-.navStyle ul li a:hover::before {
     width: 100%;
 }
