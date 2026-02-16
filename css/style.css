@@ -2432,15 +2432,18 @@ a.read_more, a.read_more2 {
 /*  Fancy Navbar Animation   */
 /* ========================= */
 
-/* Use a sleek, high-end font */
+/* ========================= */
+/*  Fancy Navbar Animation   */
+/* ========================= */
+
+/* Navbar base style */
 .navStyle ul li a {
     position: relative;
-    font-family: 'Raleway', 'Helvetica Neue', sans-serif; /* sleek, professional */
-    font-weight: 700;
+    color: #222222;
+    font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
     padding: 10px 15px;
-    color: #2C2C2C; /* dark charcoal, more elegant than pure black */
     transition: all 0.4s ease;
 }
 
@@ -2452,7 +2455,7 @@ a.read_more, a.read_more2 {
     height: 3px;
     left: 50%;
     bottom: -5px;
-    background: linear-gradient(90deg, #BFA05B, #D9C7A1, #BFA05B); /* luxurious gold gradient */
+    background: linear-gradient(90deg, #ED5441, #FFE800, #0593F9);
     transition: all 0.4s ease;
     border-radius: 2px;
     transform: translateX(-50%);
@@ -2463,16 +2466,16 @@ a.read_more, a.read_more2 {
     width: 100%;
 }
 
-/* Color change and subtle scale on hover */
+/* Color change and scale on hover */
 .navStyle ul li a:hover {
-    color: #BFA05B;  /* gold accent */
+    color: #ED5441;  /* Main accent color */
     transform: scale(1.05);
 }
 
-/* Active/current link style */
+/* Active link style */
 .navStyle ul li a.current,
 .navStyle ul li a.active {
-    color: #BFA05B;
+    color: #ED5441;
 }
 
 .navStyle ul li a.current::after,
@@ -2488,7 +2491,7 @@ a.read_more, a.read_more2 {
     top: 0;
     width: 0;
     height: 100%;
-    background: rgba(191,160,91,0.08); /* subtle gold highlight */
+    background: rgba(237,84,65,0.1);
     z-index: -1;
     transition: all 0.4s ease;
     border-radius: 4px;
@@ -2497,3 +2500,5 @@ a.read_more, a.read_more2 {
 .navStyle ul li a:hover::before {
     width: 100%;
 }
+
+
