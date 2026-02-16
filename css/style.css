@@ -2426,3 +2426,74 @@ a.read_more, a.read_more2 {
     box-shadow: 0 8px 30px rgba(255,215,0,0.25);
     transform: scale(1.05);
 }
+---===
+
+/* ========================= */
+/*  Fancy Navbar Animation   */
+/* ========================= */
+
+/* Use a sleek, high-end font */
+.navStyle ul li a {
+    position: relative;
+    font-family: 'Raleway', 'Helvetica Neue', sans-serif; /* sleek, professional */
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color: #2C2C2C; /* dark charcoal, more elegant than pure black */
+    transition: all 0.4s ease;
+}
+
+/* Underline hover effect with gradient */
+.navStyle ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background: linear-gradient(90deg, #BFA05B, #D9C7A1, #BFA05B); /* luxurious gold gradient */
+    transition: all 0.4s ease;
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+/* Hover state */
+.navStyle ul li a:hover::after {
+    width: 100%;
+}
+
+/* Color change and subtle scale on hover */
+.navStyle ul li a:hover {
+    color: #BFA05B;  /* gold accent */
+    transform: scale(1.05);
+}
+
+/* Active/current link style */
+.navStyle ul li a.current,
+.navStyle ul li a.active {
+    color: #BFA05B;
+}
+
+.navStyle ul li a.current::after,
+.navStyle ul li a.active::after {
+    width: 100%;
+}
+
+/* Optional: smooth background highlight */
+.navStyle ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(191,160,91,0.08); /* subtle gold highlight */
+    z-index: -1;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+}
+
+.navStyle ul li a:hover::before {
+    width: 100%;
+}
