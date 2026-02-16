@@ -2396,82 +2396,28 @@ a.read_more, a.read_more2 {
 /* ========================= */
 /*  Glassy Fancy Navbar      */
 /* ========================= */
-
 .navStyle ul li a {
     position: relative;
-    font-family: 'Raleway', 'Helvetica Neue', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    color: #ffffff; /* default text */
-    transition: all 0.4s ease;
-    border-radius: 12px;
-    backdrop-filter: blur(10px); /* glass effect */
-    -webkit-backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.05); /* subtle transparent layer */
-    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
-}
-
-/* Hover / focus glow */
-.navStyle ul li a:hover {
-    background: rgba(255, 255, 255, 0.15);
-    color: #FFD700; /* luxurious gold */
-    transform: scale(1.05);
-    box-shadow: 0 8px 40px rgba(255,215,0,0.3); /* glowing highlight */
-}
-
-/* Clicked / active link */
-.navStyle ul li a.current,
-.navStyle ul li a.active {
-    background: rgba(255, 255, 255, 0.2);
-    color: #FFD700;
-    box-shadow: 0 6px 25px rgba(255,215,0,0.25);
-}
-
-/* Optional: elegant underline animation retained */
-.navStyle ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    left: 50%;
-    bottom: -5px;
-    background: linear-gradient(90deg, #FFD700, #FFB700, #FFD700);
-    transition: all 0.4s ease;
-    border-radius: 2px;
-    transform: translateX(-50%);
-}
-
-.navStyle ul li a:hover::after {
-    width: 100%;
-}
-.navStyle ul li a.current::after,
-.navStyle ul li a.active::after {
-    width: 100%;
-}
-.hero-btn {
     display: inline-block;
-    margin: 15px 10px;   
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 10px 22px;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #fff;
     text-transform: uppercase;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.08);
+    color: #fff; /* base text color */
+    background: rgba(255, 255, 255, 0.08); /* glass effect */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 2px solid transparent;
-    position: relative;
-    z-index: 1;
+    border-radius: 12px;
     overflow: hidden;
     transition: all 0.4s ease;
     text-decoration: none;
+    border: 2px solid transparent;
+    z-index: 1;
 }
 
-.hero-btn::before {
+/* Animated multicolor glow with bright reds */
+.navStyle ul li a::before {
     content: '';
     position: absolute;
     top: -50%;
@@ -2480,31 +2426,32 @@ a.read_more, a.read_more2 {
     height: 200%;
     background: linear-gradient(
         45deg,
-        #ff3cac,
-        #784ba0,
-        #2b86c5,
-        #feda75,
-        #ff3cac
+        #ff0000,    /* bright red */
+        #ff3cac,    /* hot pink */
+        #feda75,    /* bright yellow */
+        #2b86c5,    /* vivid blue */
+        #ff4500     /* orange-red */
     );
     background-size: 400% 400%;
     z-index: -1;
-    filter: blur(10px);
-    opacity: 0.7;
+    filter: blur(12px);
+    opacity: 0.75;
     transition: all 0.4s ease;
     animation: gradientShift 6s ease infinite;
 }
 
-.hero-btn:hover::before {
+/* Hover Effects */
+.navStyle ul li a:hover::before {
     opacity: 1;
 }
 
-.hero-btn:hover {
+.navStyle ul li a:hover {
     color: #fff;
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(255,255,255,0.25);
 }
 
-/* Gradient Animation */
+/* Gradient Animation Keyframes */
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
