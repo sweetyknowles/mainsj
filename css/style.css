@@ -2172,5 +2172,91 @@ section#aboutUs h4 {
   margin-left: auto;
   margin-right: auto;
 }
+/* Enterprise Delivery / Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Project cards styling */
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14.5px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-card ul {
+  list-style: disc;
+  margin-left: 18px;
+  padding-left: 10px;
+}
+
+.project-card ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.55;
+}
+
+/* Hospitality content - remove card styling, keep layout consistent */
+.hospitality-content {
+  padding: 20px 15px;
+  background: none;
+  box-shadow: none;
+}
+
+.hospitality-content h3 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.hospitality-content p {
+  font-size: 14.5px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.hospitality-content ul {
+  list-style: disc;
+  margin-left: 18px;
+  padding-left: 10px;
+}
+
+.hospitality-content ul li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
