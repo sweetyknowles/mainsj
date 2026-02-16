@@ -2497,27 +2497,25 @@ a.read_more, a.read_more2 {
 .navStyle ul li a:hover::before {
     width: 100%;
 }
+/* ===== ULTRA PREMIUM NAVBAR BORDER ===== */
 
-
-/* ===== LUXURY NAVBAR BORDER (WORKING VERSION) ===== */
-
-.header,
-.top_header {
-    position: relative;
-    background: rgba(8, 18, 45, 0.92) !important;
+.navbar {
+    background: rgba(8, 18, 45, 0.95) !important;  /* deep luxury background */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    
+
     border-bottom: 1px solid rgba(255,215,0,0.35) !important;
 
     box-shadow: 
-        0 6px 25px rgba(0,0,0,0.45),
+        0 6px 30px rgba(0,0,0,0.55),
         0 1px 0 rgba(255,215,0,0.25) inset;
+
+    position: relative;
+    z-index: 999;
 }
 
-/* glowing luxury bottom line */
-.header:after,
-.top_header:after {
+/* luxury gold animated line */
+.navbar::after {
     content: "";
     position: absolute;
     left: 0;
@@ -2532,14 +2530,6 @@ a.read_more, a.read_more2 {
         rgba(255,215,0,0.95),
         transparent
     );
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
-/* when navbar sticks while scrolling */
-.header.fixed,
-.top_header.fixed {
-    background: rgba(5, 12, 35, 0.97) !important;
-    box-shadow: 
-        0 10px 35px rgba(0,0,0,0.6),
-        0 1px 0 rgba(255,215,0,0.35) inset;
-}
