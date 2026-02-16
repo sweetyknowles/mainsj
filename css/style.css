@@ -2257,19 +2257,30 @@ section#aboutUs h4 {
   .projects-grid {
     grid-template-columns: 1fr;
   }
-}
-
-/* Center tables inside artifacts section */
+}/* == Backlog Prioritization Table Styling == */
 #artifacts .artifact-block table.artifact-table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%; /* optional: adjust width */
+  width: 80%;             /* narrower for better focus */
+  margin: 0 auto 15px auto; /* center table, reduce bottom spacing */
   border-collapse: collapse;
+  font-size: 14px;        /* slightly smaller, compact */
 }
 
 #artifacts .artifact-block table.artifact-table th,
 #artifacts .artifact-block table.artifact-table td {
-  padding: 8px 12px;
-  text-align: left; /* keeps content readable */
+  padding: 6px 12px;      /* tighter cells */
+  text-align: left;
+  vertical-align: top;    /* align text neatly */
+  border-bottom: 1px solid #ddd; /* subtle row separation */
 }
+
+#artifacts .artifact-block table.artifact-table th {
+  font-weight: 600;
+  color: #007bff;
+}
+
+#artifacts .artifact-block table.artifact-table td {
+  color: #333;
+  line-height: 1.5;
+}
+
 
