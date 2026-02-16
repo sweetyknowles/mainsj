@@ -2397,6 +2397,8 @@ a.read_more, a.read_more2 {
 /*  Glassy Fancy Navbar      */
 /* ========================= */
 /* ===== NAVBAR GLASS BUTTONS ===== */
+
+/* ===== NAVBAR GLASS BUTTONS ===== */
 .navStyle ul li a {
     position: relative;
     display: inline-block;
@@ -2500,3 +2502,4 @@ a.read_more2:hover::before {
     50% { background-position: 120% 50%; }
     100% { background-position: 0% 50%; }
 }
+
