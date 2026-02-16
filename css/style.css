@@ -2121,6 +2121,36 @@ section#aboutUs h4 {
   gap: 30px;
 }
 
+
+/* == Artifacts Section Styling == */
+#artifacts {
+  padding: 60px 0;
+  background-color: #fafafa;
+}
+
+#artifacts h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#artifacts h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.artifact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
 /* Artifact cards */
 .artifact-card {
   background: #fff;
