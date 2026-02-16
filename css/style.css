@@ -2499,29 +2499,31 @@ a.read_more, a.read_more2 {
 }
 /* ===== ULTRA PREMIUM NAVBAR BORDER ===== */
 
+/* ===== TRANSPARENT NAVY GLASS NAVBAR ===== */
+
 .navbar {
-    background: rgba(8, 18, 45, 0.95) !important;  /* deep luxury background */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    width: 100%;
+    background: rgba(10, 25, 60, 0.75) !important;  /* transparent navy */
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 
-    border-bottom: 1px solid rgba(255,215,0,0.35) !important;
+    border: none !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.35);
 
-    box-shadow: 
-        0 6px 30px rgba(0,0,0,0.55),
-        0 1px 0 rgba(255,215,0,0.25) inset;
-
-    position: relative;
-    z-index: 999;
+    position: fixed;   /* keeps full bar styled */
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
-/* luxury gold animated line */
-.navbar::after {
+/* full width gold luxury bottom line */
+.navbar:after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 2px;
+    height: 1.5px;
     background: linear-gradient(
         90deg,
         transparent,
@@ -2530,6 +2532,21 @@ a.read_more, a.read_more2 {
         rgba(255,215,0,0.95),
         transparent
     );
-    opacity: 0.95;
 }
 
+/* make inner container transparent too */
+.navbar .container {
+    background: transparent !important;
+}
+
+/* navbar text color (clean white) */
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* hover luxury gold */
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #ffd700 !important;
+}
