@@ -2340,3 +2340,124 @@ a.read_more, a.read_more2 {
 .service_icon span:hover {
   transform: scale(1.2);
 }
+
+/* ========================= */
+/*  ADDITIONAL ANIMATIONS    */
+/* ========================= */
+
+/* --- Hero Text Fade + Slide --- */
+.top_left_cont h2,
+.top_left_cont p,
+a.read_more, a.read_more2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s ease forwards;
+}
+
+.top_left_cont h2 {
+  animation-delay: 0.3s;
+}
+
+.top_left_cont p {
+  animation-delay: 0.5s;
+}
+
+a.read_more, a.read_more2 {
+  animation-delay: 0.7s;
+}
+
+/* --- Keyframes --- */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- Portfolio Boxes Hover Scale --- */
+.Portfolio-box {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.Portfolio-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* --- Services Icon Pulse --- */
+.service_icon span {
+  transition: transform 0.3s ease;
+}
+
+.service_icon span:hover {
+  transform: scale(1.2);
+}
+
+/* ========================= */
+/*  Fancy Navbar Animation   */
+/* ========================= */
+
+/* Navbar base style */
+.navStyle ul li a {
+    position: relative;
+    color: #222222;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: all 0.4s ease;
+}
+
+/* Underline hover effect with gradient */
+.navStyle ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background: linear-gradient(90deg, #ED5441, #FFE800, #0593F9);
+    transition: all 0.4s ease;
+    border-radius: 2px;
+    transform: translateX(-50%);
+}
+
+/* Hover state */
+.navStyle ul li a:hover::after {
+    width: 100%;
+}
+
+/* Color change and scale on hover */
+.navStyle ul li a:hover {
+    color: #ED5441;  /* Main accent color */
+    transform: scale(1.05);
+}
+
+/* Active link style */
+.navStyle ul li a.current,
+.navStyle ul li a.active {
+    color: #ED5441;
+}
+
+.navStyle ul li a.current::after,
+.navStyle ul li a.active::after {
+    width: 100%;
+}
+
+/* Optional: smooth background highlight */
+.navStyle ul li a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(237,84,65,0.1);
+    z-index: -1;
+    transition: all 0.4s ease;
+    border-radius: 4px;
+}
+
+.navStyle ul li a:hover::before {
+    width: 100%;
+}
