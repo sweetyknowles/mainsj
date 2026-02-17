@@ -1,1069 +1,122 @@
-<!--
-Author: http://webthemez.com
-Note: Donate to remove backlink/credits in the footer(webthemez.com)--
-Any help: webthemez@gmail.com
-Licence: Creative Commons Attribution 3.0** - http://creativecommons.org/licenses/by/3.0/
--->
-<!-- trigger rebuild -->
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, maximum-scale=1">
-  <title>SJ Noir | Product Owner & Agile Delivery Leader
-  </title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SJ Noir | Portfolio</title>
 
-  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-  <link href="css/animate.css" rel="stylesheet" type="text/css">
-
-  <!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
-
+  <!-- Atom Template CSS / Tailwind + Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<body>
-
-  <!--Hero_Section-->
-  <section id="hero_section" class="top_cont_outer">
-    <div class="hero_wrapper">
-      <div class="container">
-        <div class="hero_section">
-          <div class="row">
-            <div class="col-md-12">
-
-              <div class="top_left_cont zoomIn wow animated"> 
-                <h2>SJ Noir<br> <strong>Product Owner & Business Analyst </strong></h2>
-
-                 <p style="margin-top:15px; font-size:18px; max-width:750px;">
-   <p>I help teams turn ideas into impactful digital solutions that improve business outcomes.</p>
-                 </p>
-
-
-  <!-- Home / About Buttons -->
-    
-    <a href="#aboutUs" class="hero-btn">About</a>
-
-                <div class="underline"></div>
-               
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Hero Section -->
+  <section class="bg-blue-900 text-white h-screen flex items-center justify-center text-center animate__animated animate__fadeIn">
+    <div>
+      <h1 class="text-5xl font-bold">SJ Noir</h1>
+      <p class="mt-4 text-xl">Product Owner & Business Analyst</p>
+      <p class="mt-2 max-w-xl mx-auto">Transforming strategy into measurable outcomes for complex enterprise initiatives.</p>
+      <a href="#about" class="mt-6 inline-block bg-white text-blue-900 px-6 py-3 rounded shadow hover:bg-gray-100 transition">About Me</a>
     </div>
   </section>
-  <!--Hero_Section-->
 
-
-  <!-- Expertise + Career Journey Section -->
-  <section id="expertise" class="section-padding">
-    <div class="container">
-      <h2>Agile Product & Delivery Principal</h2>
-      <h4>Disciplined execution from strategy to delivery</h4>
-      
-        <p>
-      <p>
-I am a Product Owner, Business Analyst, and Agile Leader with over 7 years helping teams deliver technology solutions across healthcare, energy, and finance. My journey started in hospitality leadership at Hilton Hotels, where I learned the value of operational excellence and customer focus, and evolved into guiding enterprise technology initiatives at Avanade.
-</p>
-<ul class="bullet-list">
-  <li>Define product vision and roadmaps that deliver measurable value</li>
-  <li>Lead cross-functional Agile teams to achieve business outcomes</li>
-  <li>Bridge strategy and execution to simplify complex problems</li>
-</ul>
-  </div>
-</section>
-  <!-- /Expertise + Career Journey Section -->
-
-
-  <!--Header_section-->
-  <header id="header_wrapper">
-    <div class="container">
-      <div class="header_box">
-        <div class="logo">
-          
-        </div>
-        <nav class="navbar navbar-inverse" role="navigation">
-          <div class="navbar-header">
-            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="main-nav" class="collapse navbar-collapse navStyle">
-            <ul class="nav navbar-nav" id="mainNav">
-              <li class="active">
-                <a href="#hero_section" class="scroll-link">Home</a>
-              </li>
-              <li>
-                <a href="#aboutUs" class="scroll-link">About</a>
-              </li>
-<li>
-    <a href="#expertise" class="scroll-link">Expertise</a> <!-- NEW LINK -->
-  </li>
-
-              <li>
-                <a href="#service" class="scroll-link">Skills</a>
-              </li>
-              <li><a href="#artifacts" class="scroll-link">Artifacts</a>
-              </li>
-              <li>
-                <a href="#Portfolio" class="scroll-link">Enterprise Delivery projects</a>
-              </li>
-              <!-- <li><a href="#clients" class="scroll-link">Experience</a></li> -->
-              <li>
-                <a href="#team" class="scroll-link">Testimonial</a>
-              </li>
-              <li>
-                <a href="#contact" class="scroll-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 md:flex md:items-center md:space-x-10">
+      <div class="md:w-1/2">
+        <img src="img/2026 agile.jpg" alt="SJ Noir Agile Delivery" class="rounded shadow animate__animated animate__fadeInLeft">
       </div>
-    </div>
-  </header>
-  <!--Header_section-->
-
-  <section id="aboutUs">
-    <!--Aboutus-->
-    <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
-      <div class="container">
-        <h2>About Me</h2>
-        <h4>Bridging Strategy, Technology, and Execution</h4>
-        <div class="inner_section">
-          <div class="row">
-            <div class="col-lg-12 about-us">
-              <div class="row">
-                <div class="col-md-6">
-                  <img class="img-responsive" src="img/2026 agile.jpg" alt="Agile Delivery"> </div>
-                <!-- /.col-md-6 -->
-                <br class="col-md-6">
-                  <h3>Delivering High-Impact Digital Solutions</h3>
-                  
-                    <p>
-
-              I am a Product Owner and Agile Delivery Leader with over 7 years of experience guiding 
-              enterprise technology initiatives across healthcare, energy, and finance. 
-              I help teams turn complex strategies into actionable solutions that create
-               measurable business outcomes.
-            </p>
-            <p>
-My career started in hospitality leadership at Hilton Hotels, 
-where I learned operational excellence and customer focus. 
-Over the past 7+ years, I’ve led enterprise technology initiatives across healthcare,
- finance, and energy through clear vision, agile leadership, and alignment 
- with stakeholders.
-</p>
-<p><strong>What I deliver:</strong></p>
-<ul class="bullet-list">
-
-  <li>Product vision & roadmaps that sharpen focus and deliver business value</li>
-  <li>Lean agile delivery, coaching teams to maximize predictability and quality</li>
-  <li>Business analysis that simplifies complexity and drives stakeholder confidence</li>
-  <li>Cross‑functional collaboration that turns strategy into results</li>
-</ul>
-<p>
-I help organizations create clarity, confidence, and momentum in delivery — moving teams from planning to measurable impact.
-</p>
-
-<h4>Key Achievements</h4>
-            <ul class="bullet-list">
-              <li>Led multi-team Agile delivery across enterprise initiatives, coaching Product Owners and Scrum Masters to ensure alignment and predictability.</li>
-              <li>Directed vendor onboarding programs and cross-functional operations in Energy and Healthcare, improving throughput by 30% and reducing integration errors by 95%.</li>
-              <li>Designed and implemented automated workflows to streamline complex business processes, increasing efficiency and reducing operational risk.</li>
-              <li>Applied AI-assisted workflow optimization to enhance decision-making, risk management, and delivery predictability.</li>
-              <li>Blended technical leadership with operational insight, ensuring teams deliver value while maintaining a client-focused mindset.</li>
-            </ul>
-             <p>
-              I combine strategic vision, technical understanding, and leadership skills to help organizations execute high-impact initiatives, while also fostering growth and collaboration within their teams.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-</section>
-
-  
-   <h3>Core Services</h3>
-<br>
-
-  <h4>Product Strategy & Technical Ownership (Product Owner)</h4>                  
-
-DDefine product vision, multi-release roadmaps, and PI planning aligned with business strategy, technical feasibility,
- and AI-augmented analytics. Prioritize backlog items using value, complexity, dependencies, risk analysis, and predictive insights to ensure delivery of 
- high-impact features. Translate strategic objectives into epics, user stories, and technical acceptance criteria that are actionable for engineering teams. 
- Collaborate with architects, engineers, and DevOps teams to validate solution feasibility, integrations, scalability, and maintainability. Support prototyping, 
- spike solutions, and technical validation to reduce delivery risk and accelerate feedback loops. Manage feature dependencies and release planning across 
- multiple teams in scaled agile frameworks, leveraging AI-enabled planning tools where applicable.
-
-
-<h4>Business Analysis & Technical Requirements (Business Analyst)</h4>
-
-Conduct end-to-end requirements discovery and analysis: process flows, data models, system interaction diagrams, and user journeys. Translate business needs 
-into functional and technical specifications that are actionable for developers and testers. Assess technical dependencies, APIs, integrations, and 
-infrastructure constraints to ensure feasibility and identify potential risks. Define acceptance criteria, test scenarios, and traceability matrices 
-linking requirements to delivered features and operational outcomes. Facilitate workshops with stakeholders to clarify business rules, edge cases, workflows, 
-and system behaviors. Maintain requirements artifacts throughout the lifecycle, ensuring clarity, version control, and audit readiness. Provide actionable 
-insights on design trade-offs, scalability, operational impact, and AI-assisted workflow optimization, bridging the gap between business objectives and 
-technical implementation.
-
-<h4>Agile Delivery Leadership (Scrum Master / Agile Delivery Lead)</h4>
-
-Facilitate agile ceremonies: sprint planning, backlog refinement, reviews, retrospectives, and daily stand-ups. Coordinate cross-team dependencies,
- risks, and impediments to maintain delivery predictability. Track and report metrics such as velocity, cycle time, defect trends, technical debt, 
- and delivery predictability. Support scaled agile practices, including PI planning, iteration tracking, and release coordination across multiple teams.
-  Coach teams and stakeholders on agile best practices, lean product thinking, and continuous improvement. Ensure transparency between technical teams and 
-  leadership, providing actionable insights for decision-making and AI-assisted risk and dependency managemen
-
- 
-<h4>Technical & Product Documentation</h4>
-
-Produce structured user stories, functional and technical specifications, API references, system guides, and release notes. Ensure documentation supports 
-traceability, operational adoption, and knowledge transfer. Leverage modern tooling and AI-enabled workflows to streamline documentation without compromising 
-accuracy or compliance.
-
-<h4>Supporting Technical Skills (Non-Coding)</h4>
-
-System architecture awareness – understanding overall system design to assess feasibility and integration needs
-
-APIs & integrations – knowledge of how systems connect and exchange data
-
-Technical feasibility assessment – evaluating solutions for practicality, complexity, implementation risks, and AI-enabled optimization
-
-Software Development Lifecycle (SDLC) – knowledge of stages, best practices, and governance
-
-Testing & quality assurance oversight – understanding unit, integration, UAT, and system testing processes
-
-Data analysis & reporting – using SQL, Excel, BI tools, or AI-driven analytics to extract insights and support decisions
-
-Cloud & infrastructure awareness – familiarity with AWS, Azure, or GCP for high-level solution context
-
-Tools & platforms – Jira, Confluence, Trello, Monday.com, or similar for Agile management and tracking
-
-Workflow automation understanding – awareness of RPA, integrations, or AI-driven automation possibilities without coding
-
-Technical documentation – creating clear specs, user stories, and solution documentation for teams
-
-
-</p>
-
-                  <ul class="about-us-list">
-                    
-                  </ul>
-                  <!-- /.about-us-list -->
-
-                </div>
-                <!-- /.col-md-6 -->
-
-              </div>
-              <!-- /.row -->
-            </div>
-            <!-- /.col-lg-12 -->
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Aboutus-->
-
-
-  <!--Service-->
-  <section id="service">
-    <div class="container">
-      <h2>Core Competencies & Technology Proficiency</h2>
-      <p>From product vision to agile delivery, I combine strategy, technology, and leadership to deliver measurable results across complex initiatives.</p>
-    
-      <div class="service_wrapper">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="service_icon delay-03s animated wow  zoomIn">
-              <span>
-                <i class="fa fa-react"></i>
-              </span>
-            </div>
-            <div class="service_block">
-
-              <h3 class="skill-header animated fadeInUp wow">Product Ownership</h3>
-    <p class="skill-list animated fadeInDown wow">
-              
-              
-  <li>Product vision, strategy, and outcome ownership</li>
-
-  <li>Backlog creation, prioritization, and ongoing refinement</li>
-  <li>Roadmap planning, execution, and delivery alignment</li>
-  <li>Stakeholder alignment and expectation management</li>
-  <li>Value-driven prioritization and decision-making</li>
-  <li>Requirements elicitation, definition, and user story creation</li>
-  <li>Acceptance criteria definition, validation, and readiness</li>
-  <li>Dependency, risk, and delivery impact management</li>
-  <li>Collaboration with engineering and cross-functional delivery teams</li>
-  <li>Metrics-driven decision-making (KPIs, ROI, adoption, outcomes)</li>
-  <li>Agile product lifecycle management</li>
-  <li>Governance, release readiness, and delivery assurance</li>
-    </p>
-            </div>
-          </div>
-          
-          <div class="col-md-3">
-            <div class="service_icon icon3  delay-03s animated wow zoomIn">
-              <span>
-                <i class="fa "></i>
-              </span>
-            </div>
-            <div class="service_block">
-              <h3 class="animated fadeInUp wow">Business Analyst</h3>
-              <p class="animated fadeInDown wow">  
-            
-                <li>Eliciting, documenting, and validating business requirements</li>
-  <li>Translating business needs into functional and technical specifications</li>
-  <li>Conducting gap analysis, impact assessment, and change management</li>
-  <li>Developing use cases, user stories, and process flows</li>
-  <li>Business process modeling, workflow analysis, and optimization</li>
-  <li>Stakeholder identification, engagement, alignment, and communication</li>
-  <li>Facilitating workshops, meetings, and interviews</li>
-  <li>Managing expectations, negotiating priorities, and influencing decisions</li>
-  <li>Building strong relationships across business and technical teams</li>
-  <li>Identifying opportunities for process improvement and automation</li>
-  <li>Designing solutions aligned with business strategy</li>
-  <li>Supporting system design, integration, testing, and implementation</li>
-  <li>Data analysis, reporting, and visualization (Excel, SQL, Tableau, Power BI, Jira)</li>
-  <li>Understanding system architecture and technical feasibility</li>
-  <li>Maintaining traceability between business requirements and delivered solutions</li>
-  <li>Ensuring documentation standards, quality assurance, and compliance</li>
-  <li>Participating in agile ceremonies: sprint planning, stand-ups, retrospectives</li>
-  <li>Supporting product owners and development teams in agile environments</li>
-  <li>Ensuring delivery aligns with deadlines, business value, and operational readiness</li>
-  <li>Strong problem-solving, critical thinking, and analytical skills</li>
-  <li>Effective verbal and written communication</li>
-  <li>Attention to detail and quality orientation</li>
-  <li>Facilitation, collaboration, and influencing skills</li>
-            
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="service_icon icon3  delay-03s animated wow zoomIn">
-              <span>
-                <i class="fa "></i>
-              </span>
-            </div>
-            <div class="service_block">
-
-              <h3 class="animated fadeInUp wow">Scrum </h3>
-               <class="skills-list">
-                <li>Agile framework implementation (Scrum, Kanban, and hybrid methodologies)</li>
-  <li>Facilitating Agile ceremonies: daily stand-ups, sprint planning, retrospectives, demos</li>
-  <li>Coaching teams and leadership on Agile principles, best practices, and culture adoption</li>
-  <li>Removing impediments and delivery blockers to ensure smooth execution</li>
-  <li>Fostering collaboration, high-performing teams, and accountability</li>
-  <li>Supporting product owners with backlog refinement, prioritization, and value delivery</li>
-  <li>Tracking, reporting, and optimizing team performance metrics (velocity, burn-down, capacity)</li>
-  <li>Ensuring adherence to Agile principles, Scrum framework, and iterative delivery</li>
-  <li>Guiding continuous improvement, process optimization, and incremental value realization</li>
-  <li>Conflict resolution and stakeholder facilitation</li>
-  <li>Aligning team goals with organizational objectives and delivery priorities</li>
-  <li>Promoting transparency and effective communication across teams and stakeholders</li>
-  <li>Risk identification, mitigation, and dependency management during delivery</li>
-  <li>Supporting cross-functional team collaboration and inter-team coordination</li>
-  <li>Facilitating organizational change, Agile maturity growth, and continuous feedback loops</li>
-  <li>Driving delivery predictability, quality, and operational excellence</li>
-
-            </ul>
-            
-              <p class="animated fadeInDown wow"> </p>
-            </div>
-          </div>
-          <!-- <div class="col-md-3">
-		<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-"></i></span> </div>
-          <div class="service_block">
-              <div class="col-md-3"> -->
-          <div class="col-md-3">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn">
-              <span>
-                <i class="fa fa-node"></i>
-              </span>
-            </div>
-            <div class="service_block">
-              <h3 class="animated fadeInUp wow">Software Engineering (dont code currently)</h3>
-              <class="skills-list">
-                <li>Proficient in software development lifecycle (SDLC) and Agile delivery</li>
-            
-                <li>Understanding of system architecture, APIs, and integrations</li>
-                <li>Database design, SQL queries, and data analysis</li>
-                <li>Unit testing, code reviews, and quality assurance practices</li>
-                <li>Debugging, troubleshooting, and resolving technical issues</li>
-                <li>Version control with Git and collaborative development workflows</li>
-                <li>Implementing and supporting scalable, maintainable software solutions</li>
-                <li>Technical feasibility assessment and solution design support</li>
-                <li>Collaboration with development teams to bridge technical and business objectives</li>
-                <li>Continuous learning and application of emerging technologies</li>
-            </ul>
-              <p class="animated fadeInDown wow"></p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn">
-              <span>
-                <i class="fa fa-mongodb"></i>
-              </span>
-            </div>
-            
-            <div class="service_block">
-
-              <h3 class="animated fadeInUp wow">Technical Documentation (Software)</h3>
-              <class="skills-list">
-                <li>Write clear, structured technical documents to support software design, development, and maintenance</li>
-  <li>Document system architecture, workflows, data flows, and functional behavior</li>
-  <li>Produce technical specifications, design documents, and implementation guides</li>
-  <li>Translate complex software concepts into precise, readable technical documentation</li>
-  <li>Collaborate with engineers to accurately capture technical details and system logic</li>
-  <li>Maintain documentation throughout the software development lifecycle</li>
-  <li>Create and update API documentation, integration notes, and technical references</li>
-  <li>Ensure documentation accuracy, consistency, and version control</li>
-  <li>Support development and handover through clear, maintainable documentation</li>
-  <li>Reduce ambiguity and rework by providing precise technical descriptions</li>
-</ul>
-              <p class="animated fadeInDown wow"></p>
-            </div>
-          </div>
-              
-              
-          <div class="col-md-3">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn">
-              <span>
-                <i class="fa fa-express"></i>
-              </span>
-            </div>
-            <div class="service_block">
-              <h3 class="animated fadeInUp wow">Jira, Confluence, SharePoint, DevO[s wiki, Trello, Monday.com</h3>
-              <p class="animated fadeInDown wow"> </p>
-            </div>
-          </div>
-            
-
-          <div class="col-md-3">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn">
-              <span>
-                <i class="fa fa-express"></i>
-              </span>
-            </div>
-            <div class="service_block">
-              <h3 class="animated fadeInUp wow">Miro, Lucidchart, Figma, MS Visio</h3>
-              <p class="animated fadeInDown wow"> </p>
-            </div>
-          </div>
-
-
-          <div class="col-md-3">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn">
-              <span>
-                <i class="fa fa-express"></i>
-              </span>
-            </div>
-            <div class="service_block">
-              <h3 class="animated fadeInUp wow">Slack,MS Teams, Zoom, Google Meet</h3>
-              <p class="animated fadeInDown wow"> </p>
-            </div>
-          </div>
-
-
-          <div class="col-md-3">
-            <div class="service_icon icon2  delay-03s animated wow zoomIn">
-              <span>
-                <i class="fa fa-express"></i>
-              </span>
-            </div>
-            <div class="service_block">
-              <h3 class="animated fadeInUp wow">ChatGPT, GPT-4,Copilot, Canva</h3>
-              <p class="animated fadeInDown wow"> </p>
-            </div>
-          </div>
-
-
-
-
-            </div>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  
-  </section>
-
-  
-  <!--Service-->
-
-</section> <!--Service-->
-
-<!-- Product Owner / BA Artifacts Section -->
-
-<!-- Artifacts Section -->
-<section id="artifacts">
-  <div class="container">
-    <h2>Product Owner & Business Analyst Artifacts</h2>
-    <h4>Real Work Examples Demonstrating Delivery & Impact</h4>
-    
-
-    <!-- User Stories -->
-    <div class="artifact-block">
-      <h3>User Stories & Acceptance Criteria</h3>
-      <p>Examples of actionable stories I wrote, showing clear business value and technical feasibility:</p>
-      <ul class="artifact-list">
-        <li>
-          <strong>Story:</strong> As a reconciliation manager, I want automated exception alerts, so that I can resolve outliers within 1 hour.
-          <br>
-          <strong>Acceptance Criteria:</strong>
-          <ul>
-            <li>Alerts sent within 5 minutes of detection</li>
-            <li>Dashboard shows open exceptions with status</li>
-            <li>Email notifications automatically sent to team</li>
-          </ul>
-          <strong>Outcome:</strong> Reduced exception resolution time by 50%, increased operational accuracy by 20%.
-        </li>
-        <li>
-          <strong>Story:</strong> As a loan officer, I want an automated document verification workflow, so I can approve loans faster.
-          <br>
-          <strong>Acceptance Criteria:</strong>
-          <ul>
-            <li>System validates documents in real-time</li>
-            <li>Approval notifications sent automatically</li>
-            <li>Audit trail maintained for compliance</li>
-          </ul>
-          <strong>Outcome:</strong> Cut loan approval cycle time by 40%, reduced manual errors by 25%.
-        </li>
-      </ul>
-    </div>
-
-    <!-- Backlog Examples -->
-    <div class="artifact-block">
-      <h3>Backlog Prioritization</h3>
-      <p>Illustrative backlog showing how tasks were prioritized and planned for sprints:</p>
-      <table class="artifact-table">
-        <thead>
-          <tr>
-            <th>Priority</th>
-            <th>Feature / Task</th>
-            <th>Business Value</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Automated approvals</td>
-            <td>High</td>
-            <td>Executive-driven requirement</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Dashboard metrics</td>
-            <td>High</td>
-            <td>Visibility for leadership</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Integration API</td>
-            <td>Medium</td>
-            <td>External vendor connection</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>User notification emails</td>
-            <td>Medium</td>
-            <td>Operational efficiency</td>
-          </tr>
-        </tbody>
-      </table>
-      <p><strong>Outcome:</strong> Sprint predictability increased 25%, backlog clarity improved for multiple teams.</p>
-    </div>
-
-    <!-- Roadmap Example -->
-    <div class="artifact-block">
-      <h3>Roadmap & Release Planning</h3>
-      <p>High-level roadmap showing PI planning and feature releases over multiple quarters:</p>
-      <ul class="artifact-list">
-        <li>
-          <strong>Q1:</strong> Automated document verification + initial dashboard
-          <br><strong>Impact:</strong> Improved loan processing efficiency by 30%
-        </li>
-        <li>
-          <strong>Q2:</strong> Vendor onboarding automation + API integration
-          <br><strong>Impact:</strong> Reduced vendor integration errors by 95%
-        </li>
-        <li>
-          <strong>Q3:</strong> Reporting & analytics dashboard enhancements
-          <br><strong>Impact:</strong> Leadership could track KPIs in real-time
-        </li>
-        <li>
-          <strong>Q4:</strong> Full system handover & operational training
-          <br><strong>Impact:</strong> Achieved 100% adoption by internal teams
-        </li>
-      </ul>
-    </div>
-
-    <!-- Stakeholder Problem Solving -->
-    <div class="artifact-block">
-      <h3>Stakeholder Problem Solving</h3>
-      <p>Key examples of challenges addressed for clients and internal teams:</p>
-      <ul class="artifact-list">
-        <li>Aligned multiple department priorities into a single delivery cadence, avoiding conflicts and missed deadlines.</li>
-        <li>Facilitated workshops to clarify requirements for non-technical stakeholders, reducing miscommunication by 30%.</li>
-        <li>Implemented dashboards for executive visibility, giving leadership real-time insights into backlog, sprint progress, and delivery risks.</li>
-        <li>Mentored junior Product Owners and BAs to improve backlog quality and story clarity across teams.</li>
-      </ul>
-      <p><strong>Outcome:</strong> Enhanced delivery predictability, operational transparency, and stakeholder satisfaction.</p>
-    </div>
-  </div>
-
-
-<!-- Hospitaltiy Opertions Insight -->
-    <p class="artifact-block">
-      <h3>Hospitality Operations Insight</h3>
-      <p>Leveraged early-career hospitality experience to enhance team coordination and client engagement in tech projects.</p>
-      <br><strong>Tasks:</strong>
-     <ul>
-              <li>Managed hotel teams, sales processes, and guest operations.</li>
-              <li>Implemented process improvements to boost guest satisfaction and operational efficiency.</li>
-              <li>Applied client-focused thinking to enterprise tech solutions, ensuring business needs remain central to delivery.</li>
-              <li>Coached teams in service excellence and process discipline, transferable to enterprise environments.</li>
-            </ul>
-            <strong>Impact:</strong> Provided unique perspective
-             bridging operational leadership with technical delivery.
-          </p>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-
-
-<!-- Enterprise Delivery / Projects Section -->
-<section id="Portfolio" class="page_section">
-  <div class="container">
-    <h2>Enterprise Delivery & Product Ownership</h2>
-    <h4>High-Impact Projects Demonstrating Delivery, Strategy & Impact</h4>
-
-    <!-- Projects Grid -->
-    <div class="projects-grid">
-
-<!-- Healthcare Digital Transformation -->
-      <div class="project-card">
-      <h3>Healthcare Digital Transformation</h3>
-      <p><strong>Role:</strong> Product Owner & Business Analyst</p>
-      <p><strong>Artifacts Used:</strong> User stories, backlog, process flows, roadmap</p>
-      <ul>
-        <li>Led backlog prioritization for multiple Product Owners and Scrum teams</li>
-        <li>Transformed manual Medicaid/Medicare claim process into automated workflow</li>
-        <li>Outcome: Reduced processing time by 40%, decreased errors by 25%</li>
-        <li>Improved stakeholder visibility with dashboards & weekly progress reporting</li>
-      </ul>
-    </div>
-
-    <!-- Energy Vendor Onboarding -->
-      <div class="project-card">
-      <h3>Energy Vendor Onboarding Program</h3>
-      <p><strong>Role:</strong> Product Owner / Agile Delivery Lead</p>
-      <p><strong>Artifacts Used:</strong> Roadmap, backlog, user stories, governance documentation</p>
-      <ul>
-        <li>Directed cross-functional teams integrating third-party vendors into enterprise system</li>
-        <li>Designed process flow for automated document validation and reporting</li>
-        <li>Outcome: Reduced integration errors by 95%, improved throughput by 30%</li>
-        <li>Implemented KPIs & dashboards for real-time status tracking</li>
-      </ul>
-    </div>
-
-    <!-- Hospitality Early Career Leadership (kept content, no card styling) -->
-      <div class="hospitality-content">
-      <h3>Hospitality Early Career Leadership (Supporting Section)</h3>
-      <p><strong>Role:</strong> Sales Manager / Team Coordinator at Hilton Hotels</p>
-      <p><strong>Artifacts Used:</strong> Sales reports, workflow mapping, team metrics</p>
-      <ul>
-        <li>Managed sales team and daily operations to ensure guest satisfaction</li>
-        <li>Streamlined reporting and coordination workflows to improve efficiency</li>
-        <li>Outcome: Increased team performance and guest satisfaction ratings</li>
-      </ul>
-    </div>
-  </div>
-</section>
-      </div>
-      <!--/Title -->
-      <!-- ::after ==$0 -->
-    </div>
-    <!-- Containe<r -->
-
-    <div class="portfolio-top"></div>
-
-    <!-- Portfolio Filters -->
-    <div class="portfolio">
-
-      <div id="filters" class="sixteen columns">
-        <ul class="clearfix">
-
-          <li><a id="all" href="#" data-filter="*" class="active">
-            <h5>SE protoypes</h5>
-            </a></li>
-          <!---
-            <li><a id="banking-btn" href="#">
-              <h5>Banking Industry - Tier 1 Digital Transformation</h5>
-              </a></li>
-
-          <li><a class="" href="#" data-filter=".design">
-            <h5>Energy Industry - Vendor Onboarding & Agile Delivery Leadership</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".android">
-            <h5>Healthcare Industry - Product Management Leadership & Scaled Agile Execution</h5>
-            </a></li>
-          
-            </a></li>
-        </ul>
-      </div>
-
-         Banking button (outside of filters so Isotope ignores it) 
-
-        <div class="banking-button-wrapper">
-  <a id="banking-btn" href="#">
-    <h5>Banking Industry – Tier 1 Digital Transformation</h5>
-  </a>
-</div>
--->
-
-      <!--/Portfolio Filters -->
-      
-
-      <div id="banking-content" style="display:none;" class="case-study-wrapper">
-        <div class="sixteen columns">
-      
-          <h3>Banking Industry – Tier 1 Digital Transformation</h3>
-      
-          <p>
-            Led a large-scale digital transformation initiative modernizing Tier-1
-            banking representative platforms. Transitioned legacy analog workflows
-            into secure, scalable digital systems while driving Agile delivery,
-            governance, and cross-functional execution across Product, Engineering,
-            UX, and Operations.
-          </p>
-      
-          <ul class="case-study-metrics">
-            <li>Reduced manual processing effort by <strong>40%</strong></li>
-            <li>Improved operational accuracy by <strong>25%</strong></li>
-            <li>Increased on-time releases by <strong>15%</strong></li>
-            <li>Cut onboarding time for new representatives by <strong>20%</strong></li>
-          </ul>
-      
-        </div>
-      </div>
-      
-      
-
-      <!-- Portfolio Wrapper -->
-
-      
-      <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
-        <!-- Portfolio Item -->
-        <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   project isotope-item effect-oscar">
-         
-          <div class="portfolio_img">
-            <img src="img/project2.jpg" alt="Portfolio 1"> </div>
-          <figcaption>
-            <div>
-              <a href="https://read-bee.herokuapp.com/" class="fancybox">
-                
-                <h2>Favorite <span>Book Club</span></h2>
-                 <p>Rails React App.</p>
-              </a>
-            </div>
-          </figcaption>
-        </figure>
-
-
-        <!-- Portfolio Item -->
-
-        <!-- Portfolio Item-->
-        <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  project prototype web isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/project4.jpg" alt="Portfolio 1"> </div>
-          <figcaption>
-            <div>
-              <a href="https://radiant-retreat-32091.herokuapp.com/" class="fancybox">
-                <h2>Favorite
-                  <span>Cities</span>
-                </h2>
-                <p>Rails React App.</p>
-              </a>
-            </div>
-          </figcaption>
-        </figure>
-        <!-- Portfolio Item -->
-
-        <!-- Portfolio Item -->
-
-        <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  project prototype web isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/project3.jpg" alt="Portfolio 1"> </div>
-          <figcaption>
-            <div>
-              <a href="https://tranquil-coast-28703.herokuapp.com/" class="fancybox">
-                <h2>Travel
-                  <span>Places</span>
-                </h2>
-                <p>MERN App.</p>
-              </a>
-            </div>
-          </figcaption>
-        </figure>
-
-        <!-- Portfolio Item -->
-
-        <!-- Portfolio Item -->
-
-        <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  project prototype web isotope-item effect-oscar">
-          <div class="portfolio_img">
-            <img src="img/project5.jpg" alt="Portfolio 1"> </div>
-          <figcaption>
-            <div>
-              <a href=" https://www.bitballoon.com/sites/friendly-brattain-b3c6a1" class="fancybox">
-                <h2>Hang
-                  <span>Man</span>
-                </h2>
-                <p>JS GAME.</p>
-              </a>
-            </div>
-          </figcaption>
-        </figure>
-        <script>
-          $(document).ready(function() {
-            // Show SE Prototypes projects
-            $('#all').click(function(e){
-              e.preventDefault();
-              $('#portfolio_wrapper').fadeIn(300);
-              $('#banking-content').hide();
-              $('#filters a').removeClass('active');
-              $(this).addClass('active');
-            });
-          
-            // Show Banking paragraph
-            $('#banking-btn').click(function(e){
-              e.preventDefault();
-              $('#portfolio_wrapper').hide();       // hide projects
-              $('#banking-content').fadeIn(300);    // show banking paragraph
-            });
-          });
-          </script>
-          
-          
-       
-               
-
-
-        <!-- Portfolio Item -->
-
-        <!--/Portfolio Item -->
-
-      </div>
-      <!--/Portfolio Wrapper -->
-
-    </div>
-    <!--/Portfolio Filters -->
-
-    <div class="portfolio_btm"></div>
-
-
-    <div id="project_container">
-      <div class="clear"></div>
-      <div id="project_data"></div>
-    </div>
-
-  </section>
-    
-
-
-  <!--/Portfolio -->
-
-  <section class="page_section" id="clients">
-    <!--page_section-->
-    <h2></h2>
-    <!--page_section-->
-    <div class="client_logos">
-      <!--client_logos-->
-      <div class="container">
-        <ul class="fadeInRight animated wow">
-          <li>
-            <p>“The computer was born to solve problems that did not exist before.” — Bill Gates</p>
-          </li>
-
+      <div class="md:w-1/2 mt-10 md:mt-0 animate__animated animate__fadeInRight">
+        <h2 class="text-3xl font-bold mb-4">Agile Product & Delivery Principal</h2>
+        <p class="mb-4">I am a seasoned Product Owner, Business Analyst, and Scrum Master with 7+ years delivering enterprise initiatives across healthcare, energy, and financial services. I translate strategy into actionable roadmaps, lead agile teams, and ensure measurable business impact.</p>
+        <p>My early career in hospitality at Hilton Hotels equipped me with operational leadership and client engagement skills, which I now apply to tech delivery environments.</p>
+        <ul class="list-disc pl-5 mt-4 space-y-2">
+          <li>Product Ownership, Backlog Prioritization, and Roadmap Delivery</li>
+          <li>Business Analysis, Requirements, and Technical Documentation</li>
+          <li>Agile Coaching and Cross-Functional Leadership</li>
+          <li>Stakeholder Alignment & Outcome Management</li>
         </ul>
       </div>
     </div>
   </section>
-  <!--client_logos-->
 
-  <section class="page_section team" id="team">
-    <!--main-section team-start-->
-    <div class="container">
-      <h2>Testimonials</h2>
-      <br>
-      <h3>Learning never ends, and I am proud and feel honoured to be taught by the following mentors.</h3>
-
-      <div id="team" name="team">
-        <div class="container">
-          <div class="row centered">
-
-            <div class="col-md-3 centered">
-              <img class="img img-circle lt-box" src="img/jamie.jpg" height="120px" width="120px" alt="">
-              <div class="rt-box">
-                <br>
-                <h4>
-                  <strong>Jamie King - Lead Instructor at General Assembly</strong>
-                </h4>
-                <p>"She has been on-boarded to new tech very quickly and has responded with passion and understanding throughout
-                  the time I've known her. SJ would serve as a fantastic asset to any dev team".</p>
-                <br/>
-              </div>
-            </div>
-
-
-            <div class="col-md-3 centered">
-              <img class="img img-circle lt-box" src="img/sunjay.jpg" height="120px" width="120px" alt="">
-              <div class="rt-box">
-                <h4>
-                  <strong>Sunjay Nair - Instructor</strong>
-                </h4>
-                <p>"She was consistently eager to learn and always reached out for help when she needed it. She is a fast and
-                  motived student with the concepts of web development".</p>
-                <br/>
-              </div>
-            </div>
-
-
-            <div class="col-md-3 centered">
-              
-              <div class="rt-box">
-                <h4>
-                  <strong>Joe Essey - Software Engineer at SalesLoft</strong>
-                </h4>
-                <p>"I spent a day instructing Sweety at General Assembly and I can say that she had an uncommon curiosity and
-                  eagerness to understand our lesson. Sweety would be a pleasure to coach in her first professional engineering
-                  role!".
-                </p>
-                <br/>
-              </div>
-            </div>
-
-            <div class="col-md-3 centered">
-              
-              <div class="rt-box">
-                <h4>
-                  <strong>Dylan Stone-Miller - Co-Founder and Director of Curriculum at HonorCode</strong>
-                </h4>
-                <p>"Sweety masterfully co-facilitated a web development workshop for K12 educators at the 2018 Future Workforce
-                  Conference. She received nothing less than positive feedback from the attendees, who did not want to leave
-                  the workshop they were so engaged! I would highly recommend Sweety for facilitation or teaching opportunities
-                  in the future..</p>
-                <br/>
-              </div>
-
-            </div>
-          </div>
+  <!-- Core Competencies (keep as-is) -->
+  <section id="competencies" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Core Competencies & Technology Proficiency</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Example card -->
+        <div class="bg-white rounded shadow p-6 hover:shadow-lg transition animate__animated animate__fadeInUp">
+          <div class="text-4xl text-blue-900 mb-4"><i class="fa fa-react"></i></div>
+          <h3 class="font-bold mb-2">Product Ownership</h3>
+          <ul class="list-disc pl-5 space-y-1 text-sm">
+            <li>Product vision, strategy, and outcome ownership</li>
+            <li>Backlog creation, prioritization, and ongoing refinement</li>
+            <li>Roadmap planning and delivery alignment</li>
+          </ul>
         </div>
-        <!-- row -->
+        <!-- Repeat other competencies as cards -->
       </div>
     </div>
   </section>
-  <!--/Team-->
-  <!--Footer-->
-  <footer class="footer_wrapper" id="contact">
-    <div class="container">
-      <section class="page_section contact" id="contact">
-        <div class="contact_section">
-          <h2>Contact</h2>
-          <h6>Delivering Excellence!</h6>
 
+  <!-- Artifacts / Projects Section -->
+  <section id="projects" class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Projects & Artifacts</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded shadow hover:shadow-lg p-6 animate__animated animate__fadeInUp">
+          <h3 class="font-bold mb-2">Healthcare Digital Transformation</h3>
+          <p class="text-sm mb-2">Product Owner & Business Analyst</p>
+          <ul class="list-disc pl-5 text-sm space-y-1">
+            <li>Automated Medicaid/Medicare claims workflow</li>
+            <li>Reduced processing time by 40%, errors by 25%</li>
+            <li>Dashboards for executive visibility</li>
+          </ul>
         </div>
-        <div class="row">
-          <div class="col-lg-4 wow fadeInLeft">
-            <div class="contact_info">
-              
-              <div class="detail">
-                
-                <p><a href="tel:+14045653142"><i class="fa fa-phone"></i> +1 404-565-3142</a></p>
-</div>
-              </div>
-              <div class="detail">
-  <p>
-    <a href="mailto:sweetyjames.knowles@gmail.com">
-      <i class="fa fa-envelope"></i> sweetyjames.knowles@gmail.com
-    </a>
-  </p>
-</div>
+        <div class="bg-white rounded shadow hover:shadow-lg p-6 animate__animated animate__fadeInUp">
+          <h3 class="font-bold mb-2">Energy Vendor Onboarding</h3>
+          <p class="text-sm mb-2">Agile Delivery Lead</p>
+          <ul class="list-disc pl-5 text-sm space-y-1">
+            <li>Directed cross-functional vendor integration</li>
+            <li>Automated document validation & reporting</li>
+            <li>Reduced integration errors by 95%, improved throughput by 30%</li>
+          </ul>
+        </div>
+        <!-- More projects... -->
+      </div>
+    </div>
+  </section>
 
-<!-- Make sure Font Awesome is included in your <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Testimonials</h2>
+      <div class="space-y-8 md:space-y-0 md:flex md:space-x-8">
+        <div class="bg-white rounded shadow p-6 animate__animated animate__fadeInUp">
+          <p>"She has been on-boarded to new tech very quickly and has responded with passion and understanding throughout the time I've known her."</p>
+          <p class="font-bold mt-2">— Jamie King</p>
+        </div>
+        <div class="bg-white rounded shadow p-6 animate__animated animate__fadeInUp">
+          <p>"Sweety masterfully co-facilitated a web development workshop for K12 educators."</p>
+          <p class="font-bold mt-2">— Dylan Stone-Miller</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                <a href="https://www.linkedin.com/in/sweety-j-03649096/">LinkedIn:</a>
-                </br>
-                <a href=" https://profiles.generalassemb.ly/profiles/sweety-knowles">GA Profile:</a>
-              </div>
-            <a href=" https://medium.com/@sweetyjames.knowles">Medium Blogs:</a>
-          </div>
-            </div>
-
-
-
-            <ul class="social_links">
-
-            </ul>
-          </div>
-          
-          <div class="col-lg-8 wow fadeInLeft delay-06s">
-            <div class="form">
-
-
-              <div id="success"> </div>
-              <!-- For success/fail messages -->
-
-              <div class="container">
-
-                <div class="footer_bottom">
-                  <span>Copyright © 2026
-                    </br>"Learning is the key to progress - halting it is the death of great inventions" -SJ </span>
-                </div>
-              </div>
-  </footer>
-
-  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-  <script type="text/javascript" src="js/jquery.nav.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.js"></script>
-  <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-  <script type="text/javascript" src="js/wow.js"></script>
-  <script src="contact/jqBootstrapValidation.js"></script>
-  <script src="contact/contact_me.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
-
-</script>
-
-
-
-
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-blue-900 text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+    <p class="mb-6">Delivering Excellence!</p>
+    <a href="mailto:sweetyjames.knowles@gmail.com" class="inline-block bg-white text-blue-900 px-6 py-3 rounded shadow hover:bg-gray-100 transition">Email Me</a>
+    <div class="mt-6 space-x-4">
+      <a href="https://www.linkedin.com/in/sweety-j-03649096/" class="text-white hover:underline">LinkedIn</a>
+      <a href="https://profiles.generalassemb.ly/profiles/sweety-knowles" class="text-white hover:underline">GA Profile</a>
+    </div>
+  </section>
 
 </body>
-
 </html>
