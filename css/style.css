@@ -2499,32 +2499,3 @@ a.read_more, a.read_more2 {
 }
 /* ===== ULTRA PREMIUM NAVBAR BORDER ===== */
 
-.navbar {
-    min-height: 40px;
-    margin-bottom: 0px;
-
-    /* ===== HIGH END BORDER ===== */
-    border: 1.5px solid rgba(255, 215, 0, 0.35);   /* subtle gold border */
-    border-radius: 14px;
-    padding: 10px 18px;
-    margin-top: 12px;
-
-    /* ===== TRANSPARENT NAVY GLASS ===== */
-    background: rgba(10, 25, 60, 0.35); /* navy transparent */
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    /* ===== SMOOTH ANIMATION ===== */
-    transition: all 0.4s ease;
-}
-/* ===== NAVBAR HOVER GLASS EFFECT ===== */
-.navbar:hover {
-    background: rgba(10, 25, 60, 0.55);
-    border: 1.5px solid rgba(255, 215, 0, 0.9);
-
-    box-shadow: 
-        0 0 25px rgba(64, 13, 174, 0.93),
-        0 0 60px rgba(108, 68, 238, 0.563);
-
-    transform: translateY(-2px);
-}
